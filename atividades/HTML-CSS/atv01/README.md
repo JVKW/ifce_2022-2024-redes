@@ -1,7 +1,7 @@
 # Atividade Prática 01
 
 > Em nossa primeira atividade prática vamos trabalhar um pouco as tags básicas para ênfase ou destaque textual.
-> Segue abaixo uma breve [revisão](#def) sobre as tags que serão abordadas nesta atividade e, logo após, as [instruções](#inst) para a realização desta atividade.
+> Segue abaixo uma breve [revisão](#def) sobre as tags que serão abordadas nesta atividade e, logo após, as [instruções](#inst) para sua realização.
 
 <a id="def"></a>
 ## Tags de Destaque: definição e exemplos
