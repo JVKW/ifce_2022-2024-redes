@@ -4,4 +4,5 @@ Repositório para códigos e materiais utilizados na disciplina de Introdução 
 ## Neste repositório você pode encontrar:
 
 - [Exemplos trabalhados em aula](Exemplos)
+- [Atividades](atividades)
 - [Materiais complementares de estudo](materiais-complementares)
