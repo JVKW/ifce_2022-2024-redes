@@ -15,9 +15,9 @@
 <a id="inst"></a>
 ## Instruções para Realização da Atividade
 
-- Esta atividade tem o objetivo de exercitar o uso das tags básicas trabalhadas em aula;
+- Esta atividade tem o objetivo de exercitar o uso das tags básicas trabalhadas em aula.
 
-- A atividade consiste em replicar o resultado apresentado na imagem abaixo, que traz um exemplo de página pessoal para organização dos estudos;
+- A atividade consiste em replicar o resultado apresentado na imagem abaixo, que traz um exemplo de página pessoal para organização dos estudos.
 
 <div align="center">
     <img src="./img-instrucoes/img-atv02.png">
@@ -29,9 +29,9 @@
 
 - O menu de navegação é composto por links internos que levam a cada seção da página.
 
-- Na seção "Disciplinas" complete a lista com todas as disciplinas que está cursando no semestre atual, deixando destacada a disciplina de Web Design.
+- Na seção "Disciplinas" complete a lista com todas as disciplinas que está cursando no semestre atual, deixando destacada a disciplina de Introdução ao Desenvolvimento Web.
 
-- Na seção "O que aprendemos até aqui em Web Design" complete a lista com a maior quantidade possível de items listados com relação ao conteúdo estudado na disciplina.
+- Na seção "O que aprendemos até aqui em IDW" complete a lista com a maior quantidade possível de items listados com relação ao conteúdo estudado na disciplina.
 
 - Além disso, defina para algums termos uma explicação extra que deve ser apresentada ao passar o mouse por cima do texto, como a seguir:
 
