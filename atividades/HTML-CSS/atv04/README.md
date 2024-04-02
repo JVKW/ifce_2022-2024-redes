@@ -33,6 +33,9 @@
         ![](./img-instrucoes/code-html.png)
     - Essa estrutura define: um *container* (`div`) principal, onde todos os demais elementos serão inseridos; uma `div` para estruturar a imagem à esquerda, com o `id="imagem-receita"`; e uma `div` para o texto da receita à direita, com o `id="receita"`;
 
+    - A imagem abaixo, utilizada no exemplo, está disponível neste repositório ([nesse link](./codigo-base/img/pudim.jpg)):
+        ![](./codigo-base/img/pudim.jpg)
+
     - No código base CSS, temos as seguintes regras:
         ![](./img-instrucoes/code-css.png)
     - A primeira regra, aplicada ao elemento `body`, define um `display` igual a `flex` (veremos flexbox mais adiante na disciplina), e define ainda a propriedade `justify-content` (também do flexbox) igual a `center`, centralizando os elmentos horizontalmente;
