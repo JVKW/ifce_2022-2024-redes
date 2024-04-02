@@ -36,6 +36,6 @@
     - No código base CSS, temos as seguintes regras:
         ![](./img-instrucoes/code-css.png)
     - A primeira regra, aplicada ao elemento `body`, define um `display` igual a `flex` (veremos flexbox mais adiante na disciplina), e define ainda a propriedade `justify-content` (também do flexbox) igual a `center`, centralizando os elmentos horizontalmente;
-    - A segunda regra, aplicada ao elemento `.container`: define uma largura máxima (`max-width`) de 1024px; aplica um espaçamento interno da borda para o conteúdp (`padding`) de `1rem`; define também um `display` igual a `flex`, fazendo com que as divs internas (`#imagem-receita e #receita`) sejam dispostas lado a lado; e define um espaçamento (`gap`) entre as divs `#imagem-receita` e `#receita` igual a `2rem`; 
+    - A segunda regra, aplicada ao elemento `.container`: define uma largura máxima (`max-width`) de 1024px; aplica um espaçamento interno da borda para o conteúdo (`padding`) de `1rem`; define também um `display` igual a `flex`, fazendo com que as divs internas (`#imagem-receita e #receita`) sejam dispostas lado a lado; e define um espaçamento (`gap`) entre as divs `#imagem-receita` e `#receita` igual a `2rem`; 
     
     - **Serão atribuídos 02 pontos extras para quem utilizar CSS externo e colocar o código desta atividade em um repositório no GitHub**.
