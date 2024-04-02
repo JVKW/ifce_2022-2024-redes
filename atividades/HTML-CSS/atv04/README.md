@@ -2,9 +2,9 @@
 
 > Nesta atividade vamos trabalhar os conceitos básicos de tipografia na Web e inclusão de imagens em páginas Web.
 
-[Acesse aqui](./../../../materiais/slides/) os materiais trabalhados em aula.
-[Acese aqui](https://classroom.google.com/c/NjU2Njk1Njk1MDkz/m/NjY2MjIwNjc2ODEz/details) o material complementar sobre HTML e CSS.
-[Acesse aqui](https://codepen.io/collection/zxrdkw) a coleção de exemplos práticos trabalhados em aula e disponibilizados no CodePen.
+- [Acesse aqui](./../../../materiais/slides/) os materiais trabalhados em aula.
+- [Acese aqui](https://classroom.google.com/c/NjU2Njk1Njk1MDkz/m/NjY2MjIwNjc2ODEz/details) o material complementar sobre HTML e CSS.
+- [Acesse aqui](https://codepen.io/collection/zxrdkw) a coleção de exemplos práticos trabalhados em aula e disponibilizados no CodePen.
 
 <a id="inst"></a>
 ## Instruções para Realização da Atividade
