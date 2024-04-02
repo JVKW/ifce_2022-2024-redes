@@ -17,17 +17,25 @@
     <img src="./img-instrucoes/reultado.png">
 </div>
 
-- Na imagem abaixo estão indicados alguns requisitos tipográficos que deverão ser aplicados na resolução da atividade:
+- Na imagem abaixo estão indicados os requisitos tipográficos básicos que deverão ser aplicados na resolução da atividade:
 
 <div align="center">
     <img src="./img-instrucoes/resultado-instrucoes.png">
 </div>
 
-- **Instruções e Requisitos básicos para avaliação:**
+- **Instruções e requisitos básicos para avaliação:**
 
-    - Todas as estilizações referentes à formatação básica de textos devem ser aplicadas usando CSS. Exemplo: ao invés de usar a tag `b` para aplicar negrito em um texto, utilize a propriedade CSS `font-weight` com o valor `bold`;
-    - Perceba que em todos os exemplos de tags citadas na página, um destaque foi aplicado com uma cor de plano de fundo e bordas arredondadas, bem como no destaque do nome da disciplina;
-    - Os links também foram definidos com uma cor diferente da cor padrão;
-    - Sintam-se livres para utilizar outras cores, porém tentem manter um bom contraste visual. Utilizem o site [CorHexa](https://corhexa.com/verificador-contraste) para fazer a verificação de contraste;
-    - ***Você DEVE utilizar CSS externo***;
-    - **Coloque o código da atividade no seu GitHub e entregue o link pelo Classroom**.
+    - Defina as regras CSS necessárias para aplicar os requisitos tipográficos básicos apresentados na imagem acima;
+    - Utilize o site [Google Fonts](https://fonts.google.com/) para aplicar fontes que não são padrão do sistema (no exemplo, Fira Code e Montserrat são utilizadas);
+    - Utilize o código base disponível neste repositório, [nesse link](./codigo-base/). (o código base também está disponível no CodePen, [nesse link](https://codepen.io/lucasifce/pen/PogORMj));
+
+    - No código base HTML, temos a seguinte estrutura no corpo (body) da página:
+        ![](./img-instrucoes/code-html.png)
+    - Essa estrutura define: um *container* (`div`) principal, onde todos os demais elementos serão inseridos; uma `div` para estruturar a imagem à esquerda, com o `id="imagem-receita"`; e uma `div` para o texto da receita à direita, com o `id="receita"`;
+
+    - No código base CSS, temos as seguintes regras:
+        ![](./img-instrucoes/code-css.png)
+    - A primeira regra, aplicada ao elemento `body`, define um `display` igual a `flex` (veremos flexbox mais adiante na disciplina), e define ainda a propriedade `justify-content` (também do flexbox) igual a `center`, centralizando os elmentos horizontalmente;
+    - A segunda regra, aplicada ao elemento `.container`: define uma largura máxima (`max-width`) de 1024px; aplica um espaçamento interno da borda para o conteúdp (`padding`) de `1rem`; define também um `display` igual a `flex`, fazendo com que as divs internas (`#imagem-receita e #receita`) sejam dispostas lado a lado; e define um espaçamento (`gap`) entre as divs `#imagem-receita` e `#receita` igual a `2rem`; 
+    
+    - **Serão atribuídos 02 pontos extras para quem utilizar CSS externo e colocar o código desta atividade em um repositório no GitHub**.
