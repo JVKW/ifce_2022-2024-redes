@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Imagens</title>
+    <!-- <link rel="stylesheet" href="css/estilo.css"> -->
+    <style>
+        body {
+            text-align: center;
+        }
+
+        img {
+            width: 25%;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 10px 10px 15px #555;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Galeria de Imagens</h1>
+    <hr>
+
+    <!-- A tag img insere uma imagem na página -->
+    <!-- Atributos: -->
+    <!-- src: endereço da imagem (local ou remoto) -->
+    <!-- alt: texto alternativo (aparece quando a imagem não pode ser carregada) -->
+    <!-- title: título para a imagem (aparece ao passar o mouse por cima) -->
+    <!-- loading: forma de carregamento (lazy, para carregamento tardio e eager para carregamento prévio) -->
+    <img src="img/imagem1.jpg" alt="imagem 1" title="Título" loading="lazy">
+    <img src="img/imagem2.jpg" alt="">
+    <img src="img/imagem3.jpg" alt="">
+</body>
+
+</html>
