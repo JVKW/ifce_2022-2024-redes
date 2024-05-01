@@ -1,0 +1,1 @@
+(Lista de Strings - Nível Telemática) - Lista_Strings - 04/Outubro/2022

@@ -1,0 +1,1 @@
+Lista para exercícios - Lista_Strings - 21/Setembro/2022

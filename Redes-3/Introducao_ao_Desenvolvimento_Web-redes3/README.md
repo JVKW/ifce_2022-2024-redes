@@ -2,7 +2,7 @@
 
 > 📌 Repositório para códigos e materiais utilizados na disciplina de Introdução ao Desenvolvimento Web, do curso Técnico Integrado em Redes de Computadores do IFCE - *Campus* Tauá.
 
-> ⚠️ **Aviso:** Todo o conteúdo deste repositório, incluindo exemplos, atividades e materiais de estudo, foi criado pelo professor [Lucas Ferreira Mendes](https://github.com/lucas-lfm) da disciplina. O conteúdo para as atividades e desafios foram elaboradas pelo professor, colegas de classe e amigos, mas respondidas por mim mesmo! :D
+> ⚠️ **Aviso:** Todo o conteúdo deste repositório, incluindo exemplos, atividades e materiais de estudo, foi criado pelo professor da disciplina [Lucas Ferreira Mendes](https://github.com/lucas-lfm). O conteúdo para as atividades e desafios foram elaboradas pelo professor, colegas de classe e amigos, mas respondidas por mim mesmo! :D
 
 <hr>
 

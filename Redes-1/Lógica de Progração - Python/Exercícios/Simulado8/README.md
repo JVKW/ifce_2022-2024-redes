@@ -1,0 +1,1 @@
+Simulado pt2 - For, While e Range - 17/Agosto/2022
