@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/extras/ttf/Inter-Black.ttf') format('ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Inter';
+    color: #ccd5e6;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    background-color: #fdfcfd;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    color: #2b4d65;
+    padding: 6px;
+    margin: 30px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+img {
+    border-radius: 3px;
+    width: 250px;
+}
+
+label {
+    color: #2b4d65;
+    font-weight: bold;
+}
+
+input {
+    margin: 10px 6px 30px;
+}
+
+article {
+    background: #284b63;
+    border-radius: 6px;
+    padding: 26px 15px;
+    margin: 15px 5px 30px;
+    width: 1100px;
+
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+    transition: background-color 0.3s ease-in-out, 
+                transform 0.3s ease-in-out, 
+                box-shadow 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.1);
+    background-color: #295069;
+    box-shadow: 10px 10px 30px rgba(31, 30, 30, 0.6);
+}
+
+
+article div {
+    display: block;
+}
+
+
+#main-search-input {
+    padding: 12px 40px 12px 12px;
+    width: 40%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #7c919f;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    background-image: url('./images/icons/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: right 25px center;
+    background-size: 20px;
+}
+
+
+#main-search-input::placeholder {
+    color: #b5c1c9;
+}
+
+#main-search-input[type="text"] {
+    margin: 10px;
+}
+
+.banner-article {
+    box-shadow: 9px 9px 15px rgba(0, 0, 0, 0.3);
+}
+
+.func-user-options div, .func-user-options div * {
+    display: inline;
+}
+
+.func-user-options div {
+    margin: 6px;
+}
+
+.func-user-options div img {
+    width: 15px;
+    height: 15px;
+}
+
+.section-title-p3 {
+    display: flex;
+    font-weight: bold;
+    color: #f2fdfd;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.section-game-data-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-description {
+    width: 375px;
+    text-align: justify;
+    line-height: 1.5rem;
+}
+
+footer {
+    padding: 30px;
+}
+
+footer p {
+    color: #2b4d65;
+}
