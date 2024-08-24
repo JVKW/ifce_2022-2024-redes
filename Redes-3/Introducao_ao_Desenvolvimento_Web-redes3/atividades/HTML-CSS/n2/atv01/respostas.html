@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respostas de Atividade</title>
+    <style>
+        @import url('../../resources/fonts/web/inter.css');
+
+        body {
+            font-family: "Inter", sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #444;
+        }
+        ul {
+            line-height: 1.6;
+        }
+        .code {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Respostas da Atividade</h1>
+
+        <h2>1. Quais cores você utilizou nos diversos elementos do formulário (códigos em hexadecimal)?</h2>
+        <ul>
+            <li><strong>Cor de fundo do contêiner:</strong> #f6fdfe</li>
+            <li><strong>Cor do texto dos rótulos e título:</strong> #333 (título), #555 (rótulos)</li>
+            <li><strong>Cor da borda dos campos de entrada:</strong> #ccc</li>
+            <li><strong>Cor de fundo do botão:</strong> #1a8819</li>
+            <li><strong>Cor do texto do botão:</strong> #fff</li>
+            <li><strong>Cor de fundo do botão ao passar o cursor:</strong> #156e14</li>
+        </ul>
+
+        <h2>2. O que você teve que aplicar no CSS para que os elementos fossem apresentados um abaixo do outro?</h2>
+        <p>Para garantir que os elementos fossem apresentados um abaixo do outro, apliquei a propriedade 
+            <code>display: flex;</code> junto com <code>flex-direction: column;</code> ao elemento <code>form</code>. 
+            Isso faz com que todos os elementos filhos do formulário se alinhem verticalmente.</p>
+
+        <h2>3. Como você estilizou os elementos input?</h2>
+        <p>Os elementos <code>input</code> foram estilizados da seguinte forma:</p>
+        <ul>
+            <li><strong>Largura total:</strong> <code>width: 100%;</code></li>
+            <li><strong>Preenchimento interno:</strong> <code>padding: 10px 0;</code></li>
+            <li><strong>Margem inferior:</strong> <code>margin-bottom: 5px;</code></li>
+            <li><strong>Borda:</strong> <code>border: 1px solid #ccc;</code></li>
+        </ul>
+
+        <h2>4. Como você estilizou o botão de submit?</h2>
+        <p>O botão de <code>submit</code> foi estilizado da seguinte forma:</p>
+        <ul>
+            <li><strong>Preenchimento:</strong> <code>padding: 12px 20px;</code></li>
+            <li><strong>Borda:</strong> <code>border: none;</code></li>
+            <li><strong>Cantos arredondados:</strong> <code>border-radius: 14px;</code></li>
+            <li><strong>Cor de fundo:</strong> <code>background-color: #1a8819;</code></li>
+            <li><strong>Cor do texto:</strong> <code>color: #fff;</code></li>
+            <li><strong>Cursor:</strong> <code>cursor: pointer;</code></li>
+            <li><strong>Transição de cor:</strong> <code>transition: background-color 0.3s ease;</code></li>
+            <li><strong>Cor de fundo ao passar o cursor:</strong> <code>background-color: #156e14;</code></li>
+        </ul>
+    </div>
+</body>
+</html>

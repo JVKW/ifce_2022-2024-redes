@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Inter';
-    src: url('./fonts/extras/ttf/Inter-Black.ttf') format('ttf');
-}
+@import url('../../resources/fonts/web/inter.css');
 
 * {
     box-sizing: border-box;
@@ -10,11 +7,11 @@
     
     font-family: 'Inter';
     color: #ccd5e6;
-    font-family: 'Inter', sans-serif;
 }
 
 html {
     background-color: #fdfcfd;
+    font-family: "Inter", sans-serif;
 }
 
 body {
