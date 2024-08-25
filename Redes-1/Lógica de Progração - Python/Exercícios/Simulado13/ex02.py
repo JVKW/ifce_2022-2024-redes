@@ -19,7 +19,24 @@ A tabela abaixo ilustra alguns exemplos que cenários que poderiam acontecer. D,
 VP, indicam, respectivamente, a distância inicial entre o fugitivo e o pedalinho, a
 velocidade do drone do fugitivo e a velocidade do pedalinho.
 
+[ Tabela no README.md do diretório pai ]
+
 QUESTÃO: Você deve escrever um programa que tenha uma lista, com três elementos,
 indicando a distância D, a velocidade VF e a velocidade VP. Faça o algoritmo em Python
 para mostrar se dado um cenário hipotético, o Ladrão conseguiria ficar com a bolsa."""
 
+def ladrão_escapará(D, VF, VP):
+    distancia_lago = 12
+    
+    tempo_ladrao = distancia_lago / VF
+    
+    tempo_dimitri = D / (VP - VF) if VP > VF else float('inf')
+    
+    if tempo_dimitri <= tempo_ladrao:
+        return "Dimitri conseguirá alcançar o ladrão."
+    else:
+        return "O ladrão conseguirá fugir com a bolsa."
+
+cenario = [5, 10, 12]
+resultado = ladrão_escapará(*cenario)
+print(resultado)

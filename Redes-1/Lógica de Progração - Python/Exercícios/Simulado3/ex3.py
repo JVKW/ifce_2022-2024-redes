@@ -1,5 +1,4 @@
-"""Faça um programa que pede a nota final de um aluno na disciplina de lógica de computadores. Em seguida, o programa
-deve mostrar o seguinte resultado:"""
+"""Faça um programa que pede a nota final de um aluno na disciplina de lógica de computadores. Em seguida, o programa deve mostrar o seguinte resultado:"""
 
 # A. A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
 # B. A mensagem "Reprovado", se a média for menor do que quatro;

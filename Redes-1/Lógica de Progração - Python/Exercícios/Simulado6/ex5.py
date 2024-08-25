@@ -1,6 +1,4 @@
-"""Escreva um algoritmo que leia 3 notas de um aluno e uma letra. Se a letra for A o algoritmo deve calcula a média
-aritmética media = (n1 + n2 + n3)/3 das notas do aluno, se for P, a sua média ponderada (pesos: 5, 3 e 2)
-media = (5n1 + 3n2 + 2n3)/5 + 3 + 2 e se for H, a sua média harmônica media = (n1 + n2 + n3)/(1/n1 + 1/n2 + 1/n3)."""
+"""Escreva um algoritmo que leia 3 notas de um aluno e uma letra. Se a letra for A o algoritmo deve calcula a média aritmética media = (n1 + n2 + n3)/3 das notas do aluno, se for P, a sua média ponderada (pesos: 5, 3 e 2) media = (5n1 + 3n2 + 2n3)/5 + 3 + 2 e se for H, a sua média harmônica media = (n1 + n2 + n3)/(1/n1 + 1/n2 + 1/n3)."""
 
 n1 = float(input("Digite a primeira Nota: "))
 n2 = float(input("Digite a segunda Nota: "))

@@ -1,5 +1,4 @@
-"""Escreva um programa que pergunte um número ao usuário e imprima a tabuada daquele número. Por exemplo, se o usuário
-digitar 2, o programa imprime:"""
+"""Escreva um programa que pergunte um número ao usuário e imprima a tabuada daquele número. Por exemplo, se o usuário digitar 2, o programa imprime:"""
 
 # 1 x 2 = 2
 # 2 x 2 = 4

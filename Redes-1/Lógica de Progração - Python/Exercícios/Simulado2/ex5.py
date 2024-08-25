@@ -1,6 +1,4 @@
-"""Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não.
-Caso não seja, diga o motivo (Dia inexistente, mês inexistente, ano inexistente). Suponha que todos os meses tem 31 dias
-e que estejamos no ano de 2021 e ninguém nasceu antes de 1921."""
+"""Escreva um programa que pergunte o dia, mês e ano do aniversário de uma pessoa e diga se a data é válida ou não. Caso não seja, diga o motivo (Dia inexistente, mês inexistente, ano inexistente). Suponha que todos os meses tem 31 dias e que estejamos no ano de 2021 e ninguém nasceu antes de 1921."""
 
 ano = int(input("Ano do Aniverssário: "))
 mes = int(input("Mês do Aniverssário: "))

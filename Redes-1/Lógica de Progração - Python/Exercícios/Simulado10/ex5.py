@@ -1,5 +1,4 @@
-"""Faça um programa para ler uma string digitada pelo usuário e imprima se a string digitada termina com “RIO”
-(ignorando maiúsculas/minúsculas). """
+"""Faça um programa para ler uma string digitada pelo usuário e imprima se a string digitada termina com “RIO” (ignorando maiúsculas/minúsculas). """
 
 nome = str(input("Digite um nome: ").upper())
 

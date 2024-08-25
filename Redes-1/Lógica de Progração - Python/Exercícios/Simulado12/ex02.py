@@ -22,6 +22,8 @@ m = sum([-1, -2, 3, 4]) # m = -1 - 2 + 3 + 4 = 4
 
 A tabela abaixo ilustra alguns exemplos que podem estar no caderno de Maria.
 
+[ Tabela no README.md do diretório pai ]
+
 QUESTÃO: Você deve escrever um programa que tenha uma lista, caderno, e você não
 sabe qual o tamanho dela, mas sabe que ela tem os valores de todos os jogos. Faça o
 algoritmo em Python para mostrar quantas vezes Maria e João ganharam."""

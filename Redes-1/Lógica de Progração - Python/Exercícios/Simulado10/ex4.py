@@ -1,5 +1,4 @@
-"""Faça um programa para ler uma string digitada pelo usuário e imprima se a string digitada começa com “UNI”
-(ignorando maiúsculas/minúsculas)."""
+"""Faça um programa para ler uma string digitada pelo usuário e imprima se a string digitada começa com “UNI” (ignorando maiúsculas/minúsculas)."""
 
 nome = input("Digite um nome: ").upper()
 

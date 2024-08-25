@@ -17,46 +17,26 @@ de minutos que ela poderia dormir.
 
 A tabela abaixo ilustra alguns exemplos que podem estar no alarme da Ana Emilly.
 
+[ Tabela no README.md do diretório pai ]
+
 QUESTÃO: Você deve escrever um programa que recebe quatro números, h1, m1, h2, m2
 e cria uma lista com tamanho 04, ou seja, alarme = [h1, m1, h2, m2]. Faça o algoritmo em
 Python para mostrar um número inteiro, indicando o número de minutos que Ana Emilly
 tem para dormir.""",
 
-# REFAZER
+def calcular_minutos_sono(h1, m1, h2, m2):
+    minutos_atual = h1 * 60 + m1
+    minutos_alarme = h2 * 60 + m2
 
-alarme = []
+    if minutos_alarme >= minutos_atual:
+        minutos_sono = minutos_alarme - minutos_atual
+    else:
+        minutos_sono = (1440 - minutos_atual) + minutos_alarme
 
-"""
-h1 = int(input("Digite a hora que Emilly adormeceu: "))
-if (h1 > 24) or (h1 < 0):
-    print("Digite um horário existente!")
-    quit()
-    
-m1 = int(input("Digite o minuto que Emilly adormeceu: "))
-if (m1 > 60) or (m1 < 0):
-    print("Digite um valor em minutos existente!")
-    quit()
-    
-h2 = int(input("Digite a hora que Emilly Acordou: "))
-if (h2 > 24) or (h2 < 0):
-    print("Digite um horário existente!")
-    quit()
+    return minutos_sono
 
-m2 = int(input("Digite o minuto que Emilly Acordou: "))
-if (m2 > 60) or (m2 < 0):
-    print("Digite um valor em minutos existente!")
-    quit()
+h1, m1, h2, m2 = 22, 30, 6, 0 
+alarme = [h1, m1, h2, m2]
+minutos_sono = calcular_minutos_sono(*alarme)
 
-
-print(f"Emilly dormiu: {abs(h2 - h1)} horas(h) e {abs(m2 - m1)} minutos(m).")
-if (h2 == h1) and (m2 == m1):
-    print(f"Emilly dormiu: {abs(h2 - h1)} horas(h) e {abs(m2 - m1)} minutos(m).")
-    print("Status: Ainda dormindo.")
-elif (h2 == 0) and (h1 > 0):
-    print(f"Emilly dormiu: {abs(24 - h1)} horas(h) e {abs(m2 - m1)} minutos(m).")
-"""
-for i in range(4):
-    num = int(input(f"Digite um horário{i + 1}: "))
-    alarme.append(num)
-print(alarme)
-
+print("Ana Emilly tem", minutos_sono, "minutos para dormir.")

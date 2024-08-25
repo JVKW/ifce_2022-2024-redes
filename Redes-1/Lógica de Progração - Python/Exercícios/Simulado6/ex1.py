@@ -1,6 +1,4 @@
-"""Elabore um algoritmo que receba 2 valores numéricos e um símbolo. Caso o símbolo seja um dos relacionados abaixo
-efetue a operação correspondente com os valores. Cuidado não efetuar uma divisão por 0. Símbolos: “+” operação de soma,
-“-” operação de subtração, “*” operação de multiplicação, “/” operação de divisão."""
+"""Elabore um algoritmo que receba 2 valores numéricos e um símbolo. Caso o símbolo seja um dos relacionados abaixo efetue a operação correspondente com os valores. Cuidado não efetuar uma divisão por 0. Símbolos: “+” operação de soma, “-” operação de subtração, “*” operação de multiplicação, “/” operação de divisão."""
 
 num1 = float(input("Digite um número: "))
 num2 = float(input("Digite outro número: "))

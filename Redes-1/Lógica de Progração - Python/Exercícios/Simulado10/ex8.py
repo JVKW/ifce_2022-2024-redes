@@ -1,9 +1,8 @@
-"""Escreva um programa que dado um valor numérico digitado pelo usuário (armazenado em
-uma variável inteira), imprima cada um dos seus dígitos por extenso.
+# Escreva um programa que dado um valor numérico digitado pelo usuário (armazenado em uma variável inteira), imprima cada um dos seus dígitos por extenso.
 
-Por exemplo:
-Entre o número: 4571
-Resultado: quatro, cinco, sete, um"""
+# Por exemplo:
+# Entre o número: 4571
+# Resultado: quatro, cinco, sete, um
 
 num = str(input("Digite um número: "))
 

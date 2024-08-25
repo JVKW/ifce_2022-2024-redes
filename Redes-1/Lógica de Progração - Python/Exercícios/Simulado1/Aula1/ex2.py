@@ -1,5 +1,4 @@
-"""Faça um algoritmo para calcular a média aritmética M entre duas notas de um aluno e mostrar sua situação, que pode
-ser aprovado (M ≥ 7), reprovado (M < 4) e AF (4 ≤ M < 7)."""
+"""Faça um algoritmo para calcular a média aritmética M entre duas notas de um aluno e mostrar sua situação, que pode ser aprovado (M ≥ 7), reprovado (M < 4) e AF (4 ≤ M < 7)."""
 
 nota1 = float(input("Digite a 1º nota: "))
 nota2 = float(input("Digite a 2º nota: "))

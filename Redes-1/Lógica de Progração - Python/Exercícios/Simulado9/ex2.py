@@ -1,6 +1,4 @@
-"""Receber uma palavra, calcule quantas vogais (a, e, i, o, u) possui essa palavra e mostre essa informação.
-Em seguida, peça ao usuário para que ele entre com um caractere(vogal ou consoante) e substitua todas as vogais da
-palavra dada por esse caractere."""
+"""Receber uma palavra, calcule quantas vogais (a, e, i, o, u) possui essa palavra e mostre essa informação. Em seguida, peça ao usuário para que ele entre com um caractere(vogal ou consoante) e substitua todas as vogais da palavra dada por esse caractere."""
 
 name = str(input("Escreva um nome: "))
 

@@ -1,5 +1,4 @@
-"""Faça um programa que imprima o seguinte padrão de saída:
-DICA: use um for/while dentro de outro."""
+"""Faça um programa que imprima o seguinte padrão de saída: DICA: use um for/while dentro de outro."""
 # 1
 # 1 2
 # 1 2 3

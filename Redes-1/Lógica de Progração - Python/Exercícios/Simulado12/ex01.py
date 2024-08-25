@@ -20,6 +20,8 @@ Com base nas respostas recebidas após cada palpite, um jogador pode eventualmen
 deduzir qual é a senha. O objetivo do jogo é descobrir a senha com o mínimo de
 tentativas.
 
+[ Tabela no README.md do diretório pai ]
+
 QUESTÃO: Você deve escrever um programa que tenha duas listas, senha e palpite,
 ambas com tamanho 04. Faça o algoritmo em Python para mostrar todas as posições
 deduzidas após um conjunto de palpites e respostas, isto é, o E e o B."""
