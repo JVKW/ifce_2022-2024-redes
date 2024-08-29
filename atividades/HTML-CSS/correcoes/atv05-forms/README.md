@@ -10,7 +10,7 @@
 > - box-model CSS
 
 - [Acesse aqui](https://classroom.google.com/c/NjU2Njk1Njk1MDkz/a/NzA3Nzc2MDg4OTA1/details) a descrição da atividade no Classroom da disciplina.
-- [Acese aqui](https://codepen.io/prof_lucasmendes/pen/wvLxQPe) o código HTML para a resolução da atividade.
+- [Acesse aqui](https://codepen.io/prof_lucasmendes/pen/wvLxQPe) o código HTML para a resolução da atividade.
 
 <a id="inst"></a>
 ## Instruções para Realização da Atividade
