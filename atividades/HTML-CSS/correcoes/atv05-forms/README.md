@@ -27,7 +27,7 @@
 
 1. Faça um `fork` do código para sua conta (essa opção se encontra na parte inferior direita da página de edição do CodePen) ou crie um projeto no VS Code e copie o código HTML no arquivo index.html
 
-1. Perceba que no código HTML, na definição dos campos de entrada do formulário, a tag `label` foi usada para envolver as tags `span` (con o rótulo do campo) e as tags `input`/`textarea` (definindo o campo de entrada), como a seguir. Fazendo dessa forma, não é necessário fazer o vínculo do atributo `for` da tag `label` com o atributo `id` da tag `input`. Além disso, conseguimos agrupar o rótulo e o campo de entrada de forma a facilitar nossa estilização no CSS.
+1. Perceba que no código HTML, na definição dos campos de entrada do formulário, a tag `label` foi usada para envolver as tags `span` (com o rótulo do campo) e as tags `input`/`textarea` (definindo o campo de entrada), como a seguir. Fazendo dessa forma, não é necessário fazer o vínculo do atributo `for` da tag `label` com o atributo `id` da tag `input`. Além disso, conseguimos agrupar o rótulo e o campo de entrada de forma a facilitar nossa estilização no CSS.
 
     <div align="center">
         <img src="img-instrucoes/code1.png">
