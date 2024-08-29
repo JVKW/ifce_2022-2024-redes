@@ -2,7 +2,7 @@
 
 ## Correção da Prática
 
-> A atividade prática 05 teve como objetivo realizar a estilização de um formulário de cadastro de usuários de um sistema web hipotético. Na atividade trabalhou os conceitos de:
+> A atividade prática 05 teve como objetivo realizar a estilização de um formulário de cadastro de usuários de um sistema web hipotético. A atividade trabalhou os conceitos de:
 > - definição de formulários HTML
 > - cores e backgrounds
 > - tipografia CSS
