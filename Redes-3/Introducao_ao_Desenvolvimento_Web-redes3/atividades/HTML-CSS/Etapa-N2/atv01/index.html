@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 01 - Formulário de Cadastro</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadastre-se para postar</h1>
+        <p>Crie seu usuário e compartilhe suas histórias</p>
+        <form action="/submit" method="post">
+            <div id="form-fill">
+
+                <label for="nome">
+                    <span>Nome:</span>
+                    <input type="text" id="nome" name="nome" placeholder="Nome do usuário" required>
+                </label>
+                
+                <label for="email">
+                    <span>E-mail:</span>
+                    <input type="email" id="email" name="email" placeholder="E-mail do usuário" required>
+                </label>
+                
+                <label for="senha">
+                    <span>Senha:</span>
+                    <input type="password" id="senha" name="senha" placeholder="Insira sua senha" required>
+                </label>
+                
+                <label for="confirmacao-senha">
+                    <span>Confirmação da senha:</span>
+                    <input type="password" id="confirmacao-senha" name="confirmacao_senha" placeholder="Confirme sua senha" required>
+                </label>
+            </div>
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    <a href="respostas.html" class="floating-button" target="_blank">Respostas da Atividade</a>
+</body>
+</html>
