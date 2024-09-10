@@ -15,6 +15,7 @@ body {
     height: 100vh;
 }
 
+/* Formulário de Cadastro */
 form {
     display: flex;
     flex-direction: column;
@@ -101,24 +102,4 @@ input[type="submit"]:hover {
 
 input:focus, textarea:focus {
     outline: none;
-}
-
-.floating-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 15px;
-    background-color: #4c77af;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s ease;
-}
-
-.floating-button:hover {
-    background-color: #6545a0;
 }
