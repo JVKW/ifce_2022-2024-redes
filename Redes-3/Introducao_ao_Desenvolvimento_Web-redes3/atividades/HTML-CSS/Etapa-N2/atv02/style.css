@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box; /* define que o navegador deve levar em consideração padding e borda para o cálculo das dimensões totais do elemento (width e heiht) */
+}
+  
+body {
+    min-height: 100vh; /* define a altura mínima de 100vh (view height) para o body */
+    display: flex; /* transforma o body em um contêiner flex */
+    flex-direction: column;
+    justify-content: center; /* alinha ao centro horizontalmente */
+    align-items: center; /* alinha ao centro verticalmente */
+}
+
+.container-img {
+    border-radius: 4px; /* arredonda as bordas */
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.4); /* aplica um efeito de sombra ao elemento com os valores de: deslocamento horizontal, deslocamento vertial, blur (desfoque), espalhamento e cor  */
+    cursor: pointer;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.questions {
+    background-color: #ded8ce ;
+    margin-bottom: 50px;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    z-index: 1;
+    color: #fcfcfc;
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(0, 0, 0, 0.0),
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.6)
+    );
+}
+
+.container-img:hover img {
+    transform: scale(1.1);
+}
+
+img {
+    transition: transform 0.3s;
+}
+
+li {
+    list-style-type: none;
+}
+
+li ul {
+    font-weight: bold;
+}
