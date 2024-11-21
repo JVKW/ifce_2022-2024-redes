@@ -31,7 +31,7 @@ de adicionar e uma lista onde as tarefas serão exibidas.
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="container">
@@ -55,11 +55,12 @@ de adicionar e uma lista onde as tarefas serão exibidas.
 
 > **Explicação**: Aqui, temos um campo de entrada (`<input>`), um botão de adicionar (`<button>`) e uma lista (`<ul>`) onde as tarefas serão exibidas. Os `IDs` atribuídos facilitarão a manipulação desses elementos a partir do JavaScript.
 
+> 🚨❓ **Questão 01**
+> *- O que precisamos fazer para adicionar um script na seção `<head>` de uma página HTML e definir que ele só deve ser executado ao finalizar o carregamento da página?*
+
 ## 2. Estilo Visual com CSS
 
 Agora, vamos estilizar nossa lista de tarefas para deixá-la visualmente agradável. Vamos adicionar estilos para o layout, botões e a aparência das tarefas concluídas.
-
-### Passo a Passo:
 
 1. Crie um arquivo chamado `index.css`.
 1. Adicione o estilo básico, incluindo um estilo para tarefas concluídas e para o efeito de erro.
@@ -214,39 +215,220 @@ span.concluida {
 
 Agora vamos criar a lógica da aplicação em JavaScript para adicionar, marcar e remover tarefas.
 
-### Código JavaScript (script.js):
+### Passo a Passo
 
-```javascript
-const campoEntrada = document.getElementById("campoEntrada");
-const btnAdicionar = document.getElementById("btnAdicionar");
+1. Crie um arquivo chamado `script.js`.
+1. Inicialmente vamos selecionar todos os elementos da página que serão manipulados pelo nosso script.
 
-const listaTarefas = document.getElementById("listaTarefas");
-// Adicionar tarefa
-btnAdicionar.addEventListener("click", function () {
-  const tarefaTexto = campoEntrada.value.trim();
-  if (tarefaTexto !== "") {
-    const tarefa = document.createElement("li");
-    tarefa.textContent = tarefaTexto;
-    // Botão de concluir tarefa
-    tarefa.addEventListener("click", function () {
-      tarefa.classList.toggle("concluida");
-    });
-    // Botão de excluir tarefa
-    const btnExcluir = document.createElement("button");
-    btnExcluir.textContent = "Excluir";
-    btnExcluir.addEventListener("click", function () {
-      listaTarefas.removeChild(tarefa);
-    });
-    tarefa.appendChild(btnExcluir);
-    listaTarefas.appendChild(tarefa);
-    campoEntrada.value = "";
-  } else {
-    campoEntrada.classList.add("input-erro");
+    ```javascript
+    const campoEntrada = document.getElementById("campoEntrada");
+    const btnAdicionar = document.getElementById("btnAdicionar");
+    const listaTarefas = document.getElementById("listaTarefas");
+    ```
 
-    setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
-  }
-});
-```
+    > 🚨❓ **Questão 02**
+    > *- Considere os métodos de seleção de elementos do DOM (Document Object Model) em JavaScript listados abaixo. 
+    > Relacione cada método à definição correta.*
+    >
+    > - I. document.getElementById()
+    > - II. document.querySelector()
+    > - III. document.getElementsByTagName()
+    >
+    > - A. Retorna todos os elementos do DOM que possuem o mesmo nome de tag especificado.
+    > - B. Retorna um único elemento do DOM com base no valor do atributo id.
+    > - C. Retorna o primeiro elemento do DOM que corresponde ao seletor CSS especificado.
+
+1. Na sequência, vamos definir a função que cria a nova tarefa e adicona na lista de tarefas.
+
+    ```javascript
+    ...
+    function novaTarefa() {
+
+    }
+    ```
+
+1. Vamos, primeiro, obter o texto que o usuário digitou dentro do campo de entrada.
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+    }
+    ```
+    > **Explicação**: o método `trim()` permite remover os espaços em branco no início e no final de uma string, garantindo a consistência e a integridade dos dados.
+
+1. Agora precisamos verificar se o usuário digitou realmente alguma coisa, ou o campo está vazio.
+    - Caso o campo de entrada esteja vazio, ou somente com espaços em branco, precisamos dar um feedback de erro e não proceder com a inserção da atividade.
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+
+      if (nomeTarefa === "") {
+        campoEntrada.classList.add("input-erro");
+        setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
+        return;
+      }
+    }
+    ```
+    > **Explicação**: estamos adicionando a classe `input-erro` e removendo ela após 1500 ms (1,5 segundos). Essa classe está estilizada no CSS para dar um feedback visual indicando ao usuário que o campo está vazio (volte no CSS para entender o que a aplicação dessa classe faz).
+
+    > 🚨❓ **Questão 03**
+    > *- Qual método foi utilizado para adicionar a classe `input-erro` ao campo de entrada no trecho acima? O que é esse atributo `classList`?*
+
+1. Caso o usuário tenha digitado algum texto, vamos proceder com a inserção da tarefa na lista.
+
+    - Primeiro, criamos um novo elemento `li` para ser nosso item da lista de tarefas.
+    - Dentro do `li` teremos um `span` (com o texto da tarefa) e um `button` (para definir o botão de exclusão) com um ícone de lixeira.
+        - A estrutura de uma tarefa seguirá esse modelo (**NÃO copie esse trecho, é só uma demonstração de como ficará a estrutura HTML**): 
+          ```html
+          <li>
+            <span>Nome da Trefa</span>
+            <button><i class='bi bi-trash'></i></button>
+          </li>
+          ```
+        - Logo, precisamos criar esses três elementos.
+    
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+
+      if (nomeTarefa === "") {
+        campoEntrada.classList.add("input-erro");
+        setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
+        return;
+      }
+
+      const itemTarefa = document.createElement("li");
+      const span = document.createElement("span");
+      const btnExcluir = document.createElement("button");
+
+    }
+    ```
+    > 🚨❓ **Questão 04**
+    > *- O que o método `createElement()` faz e que informação ele precisa receber como argumento?*
+
+    - Agora, vamos adicionar o texto que o usuário digitou no campo de entrada ao `span` dentro do item da lista de tarefas. Além disso, vamos inserir um ícone de lixeira no botão de exclusão.
+
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+
+      if (nomeTarefa === "") {
+        campoEntrada.classList.add("input-erro");
+        setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
+        return;
+      }
+
+      const itemTarefa = document.createElement("li");
+      const span = document.createElement("span");
+      const btnExcluir = document.createElement("button");
+
+      span.innerText = nomeTarefa;
+      btnExcluir.innerHTML = "<i class='bi bi-trash'></i>";
+    }
+    ```
+    > **Explicação rápida**: o trecho `<i class='bi bi-trash'></i>` é defindo pelo Bootstrap Icons, é assim que a biblioteca sabe que queremos inserir um ícone de determinado tipo.
+
+    > 🚨❓ **Questão 05**
+    > *- Em JavaScript, ao manipular elementos do DOM, os atributos `innerText` e `innerHTML` são frequentemente utilizados. 
+    > Qual das alternativas abaixo descreve corretamente a diferença entre esses dois atributos?*
+    >
+    > - a — `innerText` somente exibe o conteúdo HTML do elemento, enquanto `innerHTML` somente exibe o texto visível ao usuário.
+    > - b — `innerText` retorna ou define apenas o texto visível ao usuário, enquanto `innerHTML` retorna ou define o conteúdo HTML do elemento, incluindo tags.
+    > - c — `innerText` é utilizado apenas para leitura, enquanto `innerHTML` pode ser utilizado tanto para leitura quanto para modificação do conteúdo do elemento.
+    > - d — Ambos os atributos são sinônimos e podem ser usados de forma intercambiável para manipular texto e HTML.
+
+    - Precisamos agora definir as ações de marcar uma tarefa como concluída e excluir uma tarefa.
+
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+
+      if (nomeTarefa === "") {
+        campoEntrada.classList.add("input-erro");
+        setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
+        return;
+      }
+
+      const itemTarefa = document.createElement("li");
+      const span = document.createElement("span");
+      const btnExcluir = document.createElement("button");
+
+      span.innerText = nomeTarefa;
+      btnExcluir.innerHTML = "<i class='bi bi-trash'></i>";
+
+      span.onclick = (e) => {
+        e.target.classList.toggle("concluida");
+      }
+
+      btnExcluir.onclick = (e) => {
+        listaTarefas.removeChild(itemTarefa);
+      }
+    }
+    ```
+    > **Explicação**: 
+    > - Aqui, estamos trabalhando com o evento de clique. Ao clicar no `span` que contém o nome da tarefa, nós alternamos, com a função `toggle()`, a aplicação da classe `concluida` (volte no CSS para ver como essa classe está definida). 
+    > - Ao clicar no botão de excluir, usamos o método `removeChild()` a partir da lista de tarefas para excluir o elemento `li` dessa tarefa.
+
+    > 🚨❓ **Questão 06**
+    > *- O evento de clique foi definido de que forma para os elementos `span` e `btnExcluir` (qual atributo foi usado e o que precisamos passar para esse atributo)?*
+
+    - Por fim, vamos adicionar os elementos criados ao DOM da página, especificando a hierarquia dos elementos.
+
+    ```javascript
+    ...
+    function novaTarefa() {
+      const nomeTarefa = campoEntrada.value.trim();
+
+      if (nomeTarefa === "") {
+        campoEntrada.classList.add("input-erro");
+        setTimeout(() => campoEntrada.classList.remove("input-erro"), 1500);
+        return;
+      }
+
+      const itemTarefa = document.createElement("li");
+      const span = document.createElement("span");
+      const btnExcluir = document.createElement("button");
+
+      span.innerText = nomeTarefa;
+      btnExcluir.innerHTML = "<i class='bi bi-trash'></i>";
+
+      span.onclick = (e) => {
+        e.target.classList.toggle("concluida");
+      }
+
+      btnExcluir.onclick = (e) => {
+        listaTarefas.removeChild(itemTarefa);
+      }
+
+      itemTarefa.appendChild(span);
+      itemTarefa.appendChild(btnExcluir);
+      listaTarefas.appendChild(itemTarefa);
+
+      campoEntrada.value = ""; // limpa o campo de entrada
+    }
+    ```
+    > **Explicação**: o método `appendChild()` adiciona uma tag filha em um elemento (ao final de todas as suas tags filhas).
+
+1. Para finalizar nossa prática, vamos definir dois eventos para chamar a função `novaTarefa()`, criada acima.
+    > O código seguinte, deve ser adicionado ao final do arquivo (após a definição da função `novaTarefa()`)
+    - O primeiro evento será o de clique no botão de adicionar.
+    - O segundo evento irá capturar o acionamento da tecla Enter.
+
+    ```javascript
+    ...
+    btnAdicionar.onclick = novaTarefa;
+
+    campoEntrada.onkeydown = (evento) => {
+      if (evento.key === "Enter") {
+          novaTarefa();
+      }
+    }
+    ```
+    **Explicação**: foi necessário um tratamento extra no evento de acionamento da tecla Enter, visto que esse evento (`onkeydown`) é disparado quando qualquer tecla é pressionada.
 
 ---
 
