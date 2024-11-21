@@ -432,6 +432,12 @@ Agora vamos criar a lógica da aplicação em JavaScript para adicionar, marcar 
 
 ---
 
+## Resultado Final
+
+- Acesse [esse link](https://drive.google.com/file/d/1xSOsAlEOvSQvI0Rnq-UPVE64S3QsYC9D/view?usp=sharing) e veja como deve ser o resultado final da nossa aplicação de lista de tarefas.
+
+---
+
 ## Conclusão
 
 Este projeto de Lista de Tarefas é uma introdução prática para manipulação de DOM e eventos
