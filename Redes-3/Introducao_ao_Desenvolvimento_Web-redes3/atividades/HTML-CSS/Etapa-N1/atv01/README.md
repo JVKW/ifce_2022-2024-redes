@@ -4,6 +4,7 @@
 > Segue abaixo uma breve [revisão](#def) sobre as tags que serão abordadas nesta atividade e, logo após, as [instruções](#inst) para sua realização.
 
 <a id="def"></a>
+
 ## Tags de Destaque: definição e exemplos
 
 > As tags de destaque são usadas para destacar termos ou trechos em um conteúdo textual.
@@ -38,6 +39,7 @@
 </div>
 
 <a id="inst"></a>
+
 ## Instruções para Realização da Atividade
 
 - Esta atividade tem o objetivo de exercitar o uso das tags semânticas de destaque e ênfase textual apresentadas acima e abordadas em aula;
@@ -56,23 +58,23 @@
 
 - Caso prefira, pode utilizar a ferramenta online CodePen, onde o código base desta atividade encontra-se neste [link](https://codepen.io/lucasifce/pen/jOJKwBY);
 
-    > Ao acessar o link da atividade no CodPen, siga as seguintes etapas:
+    > Ao acessar o link da atividade no CodePen, siga as seguintes etapas:
     >> - Faça login, caso ainda não tenha feito;
     >
     > <br><div align="center">
-    >    <img src="./img-instrucoes/cap-codepen-01.png">
+    > <img src="./img-instrucoes/cap-codepen-01.png">
     > </div><br>
     >
     >> - Realize um *fork* do projeto (isso irá copiá-lo para sua conta);
     >
     ><br><div align="center">
-    >    <img src="./img-instrucoes/cap-codepen-02.png">
+    > <img src="./img-instrucoes/cap-codepen-02.png">
     ></div><br>
     >
     >> - Faça as alterações necessárias para concluir a atividade e então, copie o link de compartilhamento do seu projeto com a atividade concluída;
     >
     ><br><div align="center">
-    >    <img src="./img-instrucoes/cap-codepen-03.png">
+    > <img src="./img-instrucoes/cap-codepen-03.png">
     ></div>
     >
     ><div align="center">
@@ -81,5 +83,3 @@
     >
     > - Por fim, no classroom, entregue o link copiado como resposta da atividade.<br><br>
     > - <i>Atividade Desenvolvida, Elaborada e Postada pelo Professor <a href="[def]">Lucas Mendes!</a></i>
-
-[def]: ttps://github.com/lucas-lf

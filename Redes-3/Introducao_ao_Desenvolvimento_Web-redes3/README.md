@@ -22,15 +22,15 @@
 
 ### 📑 Referências e Documentações:
 
-  - W3Schools: https://www.w3schools.com/
+- W3Schools: https://www.w3schools.com/
   - MDN Web Docs: https://developer.mozilla.org/pt-BR/
   - Diretrizes de Acessibilidade: https://www.w3.org/TR/WCAG21/
 
 ### ▶️ Cursos:
 
-  - Curso de HTML e CSS - Gustavo Guanabara: https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&feature=shared
-  - Curso de Git e GitHub - Gustavo Guanabara: https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&feature=shared
-  - Plataforma de Cursos (pagos e gratuitos): https://www.udemy.com/
+- Curso de HTML e CSS - Gustavo Guanabara: https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&feature=shared
+- Curso de Git e GitHub - Gustavo Guanabara: https://youtube.com/playlist?list=PLHz_AreHm4dm7ZULPAmadvNhH6vk9oNZA&feature=shared
+- Plataforma de Cursos (pagos e gratuitos): https://www.udemy.com/
 
 ### ✅ Validadores de HTML e CSS:
 
