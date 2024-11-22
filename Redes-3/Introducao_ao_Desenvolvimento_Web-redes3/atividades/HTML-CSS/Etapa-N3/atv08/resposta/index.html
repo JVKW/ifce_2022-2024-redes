@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="entrada">
+        <input
+          type="text"
+          placeholder="Informe o nome da tarefa..."
+          id="campoEntrada"
+        />
+        <button id="btnAdicionar">Adicionar</button>
+      </div>
+
+      <div>
+        <h3>Tarefas</h3>
+        <ul id="listaTarefas"></ul>
+      </div>
+
+      <div id="respostas">
+        <h2>Questões e Respostas</h2>
+
+        <ul>
+          <li>
+            <strong>🚨❓ Questão 01:</strong>
+            <p><strong>Pergunta:</strong> O que precisamos fazer para adicionar um script na seção <code>&lt;head&gt;</code> de uma página HTML e definir que ele só deve ser executado ao finalizar o carregamento da página?</p>
+            <p><strong>Resposta:</strong> Para garantir que o script só seja executado após o carregamento completo da página, utilizamos o atributo <code>defer</code> na tag <code>&lt;script&gt;</code>.</p>
+            <pre><code>&lt;script src="script.js" defer&gt;&lt;/script&gt;</code></pre>
+            <p>O atributo <code>defer</code> faz com que o script seja executado somente após o carregamento completo do HTML.</p>
+          </li>
+        
+          <li>
+            <strong>🚨❓ Questão 02:</strong>
+            <p><strong>Pergunta:</strong> Considere os métodos de seleção de elementos do DOM (Document Object Model) em JavaScript listados abaixo. Relacione cada método à definição correta:</p>
+            <ul>
+              <li>I. <code>document.getElementById()</code></li>
+              <li>II. <code>document.querySelector()</code></li>
+              <li>III. <code>document.getElementsByTagName()</code></li>
+            </ul>
+            <p><strong>Respostas:</strong></p>
+            <ul>
+              <li>I. <code>document.getElementById()</code> - <strong>B</strong>Retorna um único elemento do DOM com base no valor do atributo <code>id</code>.</li>
+              <li>II. <code>document.querySelector()</code> - <strong>C</strong>Retorna o primeiro elemento do DOM que corresponde ao seletor CSS especificado.</li>
+              <li>III. <code>document.getElementsByTagName()</code> - <strong>A</strong>Retorna todos os elementos do DOM que possuem o mesmo nome de tag especificado.</li>
+            </ul>
+          </li>
+        
+          <li>
+            <strong>🚨❓ Questão 03:</strong>
+            <p><strong>Pergunta:</strong> Qual método foi utilizado para adicionar a classe <code>input-erro</code> ao campo de entrada no trecho acima? O que é esse atributo <code>classList</code>?</p>
+            <p><strong>Resposta:</strong> O método utilizado foi <code>classList.add("input-erro")</code>. O <code>classList</code> é uma propriedade que retorna uma coleção de classes de um elemento e fornece métodos para manipular essas classes de forma eficiente.</p>
+          </li>
+        
+          <li>
+            <strong>🚨❓ Questão 04:</strong>
+            <p><strong>Pergunta:</strong> O que o método <code>createElement()</code> faz e que informação ele precisa receber como argumento?</p>
+            <p><strong>Resposta:</strong> O método <code>createElement()</code> cria um novo elemento HTML especificado pelo argumento passado, que deve ser o nome da tag desejada.</p>
+            <pre><code>document.createElement("div")</code></pre>
+          </li>
+        
+          <li>
+            <strong>🚨❓ Questão 05:</strong>
+            <p><strong>Pergunta:</strong> Em JavaScript, ao manipular elementos do DOM, os atributos <code>innerText</code> e <code>innerHTML</code> são frequentemente utilizados. Qual das alternativas abaixo descreve corretamente a diferença entre esses dois atributos?</p>
+            <ul>
+              <li>a — <code>innerText</code> somente exibe o conteúdo HTML do elemento, enquanto <code>innerHTML</code> somente exibe o texto visível ao usuário.</li>
+              <li>b — <code>innerText</code> retorna ou define apenas o texto visível ao usuário, enquanto <code>innerHTML</code> retorna ou define o conteúdo HTML do elemento, incluindo tags.</li>
+              <li>c — <code>innerText</code> é utilizado apenas para leitura, enquanto <code>innerHTML</code> pode ser utilizado tanto para leitura quanto para modificação do conteúdo do elemento.</li>
+              <li>d — Ambos os atributos são sinônimos e podem ser usados de forma intercambiável para manipular texto e HTML.</li>
+            </ul>
+            <p><strong>Resposta:</strong> b — <code>innerText</code> retorna ou define apenas o texto visível ao usuário, enquanto <code>innerHTML</code> retorna ou define o conteúdo HTML do elemento, incluindo tags.</p>
+          </li>
+        
+          <li>
+            <strong>🚨❓ Questão 06:</strong>
+            <p><strong>Pergunta:</strong> O evento de clique foi definido de que forma para os elementos <code>span</code> e <code>btnExcluir</code> (qual atributo foi usado e o que precisamos passar para esse atributo)?</p>
+            <p><strong>Resposta:</strong> O evento de clique foi definido usando o atributo <code>onclick</code> e passando uma função de callback.</p>
+            <pre><code>btnExcluir.onclick = function() { ... }</code></pre>
+          </li>
+        </ul>      
+      </div>
+      
+    </div>
+  </body>
+</html>
